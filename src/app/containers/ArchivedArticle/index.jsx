@@ -1,16 +1,22 @@
 import React, { Fragment } from 'react';
 import { shape } from 'prop-types';
-import AMPDocument from 'react-amp-document';
+import AMPShadowDocument from 'react-amp-shadow';
 import Header from '../../components/Header';
 import Footer from '../Footer';
 
-/*
-  [1] This handles async data fetching, and a 'loading state', which we should look to handle more intelligently.
-*/
+const elementsToRemove = [
+  'div.news--branding',
+  'div.service-toolbar',
+  'div.related-articles',
+  'div.footer',
+  'div.service-toolbar__news',
+  '[role="banner"]',
+];
+
 const ArcivedArticleContainer = ({ data }) => (
   <Fragment>
     <Header />
-    <AMPDocument src={data.ampUrl} />
+    <AMPShadowDocument src={data.ampUrl} removeElements={elementsToRemove} />
     <Footer />
   </Fragment>
 );
