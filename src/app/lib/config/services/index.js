@@ -5,6 +5,7 @@
 
 import news from './news';
 import persian from './persian';
+import portuguese from './portuguese';
 
 export default {
   default: {
@@ -14,4 +15,5 @@ export default {
   },
   news,
   persian,
+  portuguese,
 };

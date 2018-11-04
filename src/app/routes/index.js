@@ -1,5 +1,5 @@
 import Article from '../containers/Article';
-import ArchivedArticle from '../containers/ArchivedArticle';
+import CPSArticle from '../containers/CPSArticle';
 import getInitialData from './getInitialData';
 import services from '../lib/config/services';
 
@@ -10,7 +10,7 @@ const idRegex = 'c[a-zA-Z0-9]{10}o';
 const ampRegex = '.amp';
 
 export const articleRegexPath = `/:service(${serviceRegex})/articles/:id(${idRegex}):amp(${ampRegex})?`;
-export const archivedArticle = `/archive`;
+export const oldArticleRegexPath = `/:service(${serviceRegex})/:id`;
 
 const routes = [
   {
@@ -20,9 +20,9 @@ const routes = [
     getInitialData,
   },
   {
-    path: archivedArticle,
+    path: oldArticleRegexPath,
     exact: true,
-    component: ArchivedArticle,
+    component: CPSArticle,
   },
 ];
 
