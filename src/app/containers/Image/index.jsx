@@ -22,42 +22,34 @@ const getIChefURL = (originCode, locator) => {
   return `https://ichef.bbci.co.uk/news/${DEFAULT_IMAGE_RES}/${overridableOriginCode}/${locator}`;
 };
 
+// Not yest getting the ichef image due to needing originCode and locator
 const getRawImageSrc = (originCode, locator) =>
   originCode !== 'pips' ? getIChefURL(originCode, locator) : locator;
 
-const ImageContainer = ({ blocks }) => {
-  if (!blocks) {
+const ImageContainer = ({
+  href,
+  altText,
+  caption,
+  copyrightHolder,
+  height,
+  width,
+}) => {
+  // console.log(`ImageContainer Props: ${JSON.stringify(href)}`);
+
+  if (!href || !altText) {
     return null;
   }
 
-  const rawImageBlock = filterForBlockType(blocks, 'rawImage');
-  const altTextBlock = filterForBlockType(blocks, 'altText');
-  const captionBlock = filterForBlockType(blocks, 'caption');
-
-  if (!rawImageBlock || !altTextBlock) {
-    return null;
-  }
-
-  const {
-    locator,
-    originCode,
-    copyrightHolder,
-    height,
-    width,
-  } = rawImageBlock.model;
-  const altText = getText(altTextBlock);
-  const copyright = getCopyright(copyrightHolder);
   const ratio = (height / width) * 100;
-  const rawImageSrc = getRawImageSrc(originCode, locator);
 
   return (
     <Figure
       alt={altText}
-      captionBlock={captionBlock}
-      copyright={copyright}
+      captionBlock={caption}
+      copyright={copyrightHolder}
       height={height}
       ratio={ratio}
-      src={rawImageSrc}
+      src={href}
       width={width}
     />
   );

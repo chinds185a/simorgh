@@ -8,13 +8,15 @@ const metadataPropTypes = {
   firstPublished: number.isRequired,
   lastPublished: number.isRequired,
   lastUpdated: number.isRequired,
+  language: string.isRequired,
   locators: shape({
-    optimoUrn: string.isRequired,
+    cpsUrn: string.isRequired,
   }),
   passport: shape({
-    language: string.isRequired,
-    home: string.isRequired,
-    category: string,
+    category: shape({
+      categoryId: string,
+      categoryName: string,
+    }),
     genre: string,
   }),
   tags: shape({

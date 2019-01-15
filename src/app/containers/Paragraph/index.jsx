@@ -7,11 +7,7 @@ import { paragraphModelPropTypes } from '../../models/propTypes/paragraph';
 
 const componentsToRender = { fragment, urlLink: InlineLink };
 
-const ParagraphContainer = ({ blocks }) => (
-  <Paragraph>
-    <Blocks blocks={blocks} componentsToRender={componentsToRender} />
-  </Paragraph>
-);
+const ParagraphContainer = ({ text }) => <Paragraph>{text}</Paragraph>;
 
 ParagraphContainer.propTypes = paragraphModelPropTypes;
 

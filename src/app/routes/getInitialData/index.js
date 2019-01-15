@@ -14,7 +14,13 @@ const getInitialData = async ({ match }) => {
   try {
     const { id, service, amp } = match.params;
 
-    const url = `${getBaseUrl()}/${service}/articles/${id}.json`;
+    // Coppied from routes.js
+    const optimoRegex = new RegExp('c[a-zA-Z0-9]{10}o');
+
+    // Builds path to static data based on the route hit e.g. optio or cps
+    const url = optimoRegex.test(id)
+      ? `${getBaseUrl()}/${service}/articles/${id}.json`
+      : `${getBaseUrl()}/${service}/${id}.json`;
 
     const response = await fetch(url);
 

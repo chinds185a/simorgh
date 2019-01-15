@@ -47,7 +47,7 @@ const FigureContainer = ({
 
 FigureContainer.propTypes = {
   alt: string.isRequired,
-  captionBlock: objectOf(any),
+  captionBlock: string,
   copyright: string,
   ratio: number.isRequired,
   src: string.isRequired,

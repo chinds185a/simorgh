@@ -8,6 +8,7 @@ import ResourceHints from './ResourceHints';
 
 /* eslint-disable react/prop-types */
 const Document = ({ assets, app, data, styleTags, helmet }) => {
+  console.log(`Helmet: ${helmet}`);
   const htmlAttrs = helmet.htmlAttributes.toComponent();
   const meta = helmet.meta.toComponent();
   const title = helmet.title.toComponent();

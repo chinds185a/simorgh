@@ -11,7 +11,7 @@ import path from 'path';
 // not part of react-helmet
 import helmet from 'helmet';
 import gnuTP from 'gnu-terry-pratchett';
-import routes, { articleRegexPath } from '../app/routes';
+import routes, { articleRegexPath, cpsArticleRegexPath } from '../app/routes';
 import { getStyleTag } from './styles';
 import getAssetsArray from './assets';
 
@@ -24,6 +24,7 @@ const dataFolderToRender =
   process.env.NODE_ENV === 'production' ? 'data/prod' : 'data/test';
 
 const articleDataRegexPath = `${articleRegexPath}.json`;
+const cpsArticleDataRegexPath = `${cpsArticleRegexPath}.json`;
 
 const server = express();
 server
@@ -38,12 +39,38 @@ server
   )
   .use(gnuTP())
   .get(articleDataRegexPath, async ({ params }, res) => {
+    console.log(`Articles route hit`);
     const { service, id } = params;
 
     const dataFilePath = path.join(
       dataFolderToRender,
       service,
       'articles',
+      `${id}.json`,
+    );
+
+    fs.readFile(dataFilePath, (error, data) => {
+      if (error) {
+        res.sendStatus(404);
+        console.log(error); // eslint-disable-line no-console
+        return null;
+      }
+
+      const articleJSON = JSON.parse(data);
+
+      res.setHeader('Content-Type', 'application/json');
+      res.json(articleJSON);
+      return null;
+    });
+  })
+  .get(cpsArticleDataRegexPath, async ({ params }, res) => {
+    console.log(`CPS route Hit`);
+    const { service, id } = params;
+
+    const dataFilePath = path.join(
+      dataFolderToRender,
+      service,
+      'cps',
       `${id}.json`,
     );
 
