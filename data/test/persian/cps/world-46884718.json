@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "id": "urn:bbc:ares::asset:persian/world-46884718",
+    "locators": {
+      "assetUri": "/persian/world-46884718",
+      "cpsUrn": "urn:bbc:content:assetUri:persian/world-46884718",
+      "curie": "http://www.bbc.co.uk/asset/6f3de8d2-9435-0342-976a-50b97a3c6784"
+    },
+    "type": "STY",
+    "createdBy": "persian-v6",
+    "language": "fa",
+    "lastUpdated": 1547578332721,
+    "firstPublished": 1547577881,
+    "lastPublished": 1547578325,
+    "options": {
+      "isIgorSeoTagsEnabled": false,
+      "includeComments": false,
+      "allowRightHandSide": true,
+      "isFactCheck": false,
+      "allowDateStamp": true,
+      "suitableForSyndication": true,
+      "hasNewsTracker": false,
+      "allowRelatedStoriesBox": true,
+      "isKeyContent": false,
+      "allowHeadline": true,
+      "allowAdvertising": true,
+      "hasContentWarning": false,
+      "isBreakingNews": false,
+      "allowPrintingSharingLinks": true
+    },
+    "analyticsLabels": {
+      "counterName": "persian.world.story.46884718.page",
+      "cps_asset_id": "46884718",
+      "cps_asset_type": "sty"
+    },
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "tags": {
+      "about": [
+        {
+          "thingLabel": "Gender",
+          "thingUri": "http://www.bbc.co.uk/things/03460c2c-34b5-4681-ba1f-6d5aa1d2659e#id",
+          "thingId": "03460c2c-34b5-4681-ba1f-6d5aa1d2659e",
+          "thingType": ["Theme", "Thing"],
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Gender",
+            "http://www.wikidata.org/entity/Q48277"
+          ]
+        },
+        {
+          "thingLabel": "Canada",
+          "thingUri": "http://www.bbc.co.uk/things/4bc7e064-44b5-4f17-870c-8bf927f0c9bd#id",
+          "thingId": "4bc7e064-44b5-4f17-870c-8bf927f0c9bd",
+          "thingType": ["Place", "Thing", "geoname:GeoTagConcept"],
+          "thingSameAs": ["http://sws.geonames.org/6251999/"],
+          "topicName": "کانادا",
+          "topicId": "c34k9602mjgt",
+          "curationType": ["vivo-stream"]
+        },
+        {
+          "thingLabel": "Women's rights",
+          "thingUri": "http://www.bbc.co.uk/things/8abd564a-2b8e-401c-9916-34982cb67b55#id",
+          "thingId": "8abd564a-2b8e-401c-9916-34982cb67b55",
+          "thingType": ["Theme", "Thing"],
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Women%27s_rights",
+            "http://www.wikidata.org/entity/Q223569"
+          ]
+        },
+        {
+          "thingLabel": "Saudi Arabia",
+          "thingUri": "http://www.bbc.co.uk/things/dd4fa30e-dec8-479a-8881-b480af10392c#id",
+          "thingId": "dd4fa30e-dec8-479a-8881-b480af10392c",
+          "thingType": ["Place", "Thing", "geoname:GeoTagConcept"],
+          "thingSameAs": ["http://sws.geonames.org/102358/"]
+        }
+      ]
+    },
+    "version": "v0.4.14",
+    "blockTypes": ["image", "paragraph", "list", "social_embed"],
+    "includeComments": false
+  },
+  "content": {
+    "blocks": [
+      {
+        "id": "105160641",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/390E/production/_105160641_mediaitem105160640.jpg",
+        "path": "/cpsprodpb/390E/production/_105160641_mediaitem105160640.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "رهف، ۱۸ ساله، روز شنبه وارد تورنتو شد",
+        "caption": "رهف، ۱۸ ساله، روز شنبه وارد تورنتو شد",
+        "copyrightHolder": "AFP",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "رهف محمد القنون، دختر ۱۸ ساله سعودی، که پس از فرار از این کشور ابتدا به تایلند رفت و سپس از کانادا درخواست پناهندگی کرد می‌گوید به خطر انداختن جانش برای فرار از عربستان &quot;ارزشش را داشته&quot; چرا که او حالا می‌تواند زندگی مستقل‌تری را تجربه کند. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "این دختر جوان عربستانی در چند هفته پیش مورد توجه رسانه‌های جهان قرار گرفته چرا که بعد از ورود به تایلند خود را در هتلی محصور کرد و از طریق شبکه اجتماعی توییتر اعلام کرد که به دنبال کسب پناهندگی است و درخواست کمک کرد تا دولت‌ها مانع از استرداد او به عربستان شوند.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "درخواستی که کانادا به آن جواب مثبت داد وبا قبول تقاضای پناهندگی او چند روز پیش وارد تورنتو شد.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "این دختر ۱۸ ساله سعودی گفته بود اگر به عربستان و نزد خانواده‌اش بازگردانده می‌شد احتمالا با خطر مرگ روبرو می‌شد.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "او حالا در گفتگو با شبکه سی‌بی‌سی کانادا و روزنامه تورنتو استار گفته: &quot;من چیزی برای از دست دادن نداشتم، بنابراین به خطرش می‌ارزید.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;با ما (زنان) چون یک برده، یک شیی رفتار می‌شود. برای همین هم من می‌خواهم داستان خودم را برای مردم بگویم، بگویم که بر زنان سعودی چه می‌گذرد.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "اخبار مرتبط",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "<itemMeta>persian/world-features-41429331</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "کارهایی که زنان عربستان سعودی نمی‌توانند بکنند",
+                  "headline": "کارهایی که زنان عربستان سعودی نمی‌توانند بکنند",
+                  "overtyped": "کارهایی که زنان عربستان سعودی نمی‌توانند بکنند      "
+                },
+                "locators": {
+                  "href": "http://www.bbc.com/persian/world-features-41429331"
+                },
+                "summary": "پادشاه عربستان سعودی چند روز پیش حکمی صادر کرد که به موجب آن قاعدتا از سال ۲۰۱۸ میلادی زنان سعودی هم می‌توانند رانندگی کنند.",
+                "timestamp": 1506684317,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:persian/world-features-41429331",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>persian/world-46773848</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "مقامات عربستان گذرنامه زن سعودی را در فرودگاه بانکوک 'توقیف کردند'",
+                  "headline": "گذرنامه زن سعودی از سوی مقامات عربستان در فرودگاه بانکوک 'توقیف شد'",
+                  "overtyped": "مقامات عربستان گذرنامه زن سعودی را در فرودگاه بانکوک 'توقیف کردند'"
+                },
+                "locators": {
+                  "href": "http://www.bbc.com/persian/world-46773848"
+                },
+                "summary": "یک زن جوان سعودی که قصد فرار به استرالیا را داشت گفته پاسپورتش در فرودگاه پایتخت تایلند توسط یک مقام سفارت عربستان توقیف شده است. او گفته دیگر به اسلام اعتقاد ندارد و در صورت بازگشت به عربستان، خانواده‌اش او را خواهند کشت. دیده بان حقوق بشر از مقامات تایلند خواسته‌اند تا به او اجازه سفر به استرالیا داده شود.",
+                "timestamp": 1546783027,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:persian/world-46773848",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>persian/world-46772514</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "زنان عربستان با پیامک از \"حکم طلاق\" خود مطلع می‌‎شوند",
+                  "headline": "زنان عربستان از این پس با پیامک از \"طلاق\" خود مطلع می‌‎شوند",
+                  "overtyped": "زنان عربستان با پیامک از \"حکم طلاق\" خود مطلع می‌‎شوند"
+                },
+                "locators": {
+                  "href": "http://www.bbc.com/persian/world-46772514"
+                },
+                "summary": "عربستان سعودی با وضع قانونی جدید دادگاه‌ها را موظف کرده که زنان را با ارسال پیامک از تایید حکم طلاق‌شان مطلع کند. این قانون قرار است که مناقشه بر سر \"طلاق غیابی و پنهانی\" در این کشور پایان دهد که به موجب آن زنان حتی از تصمیم دادگاه برای جاری شدن صیغه طلاق به درخواست همسرشان آگاه نمی‌شدند.",
+                "timestamp": 1546734419,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:persian/world-46772514",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>persian/world-44188136</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "افزایش فشارها به فعالان حقوق زنان در عربستان",
+                  "headline": "افزایش فشارها به فعالان حقوق زنان در عربستان",
+                  "overtyped": "افزایش فشارها به فعالان حقوق زنان در عربستان "
+                },
+                "locators": {
+                  "href": "http://www.bbc.com/persian/world-44188136"
+                },
+                "summary": "منال شریف، از فعالان حقوق زنان در عربستان از افزایش فعالیت‌ها علیه فعالان حقوق زنان این کشور خبر داده است. خانم شریف از جمله کنشگران حامی حقوق زنان است که در شروع کمپین حق رانندگی برای زنان عربستان نقش داشت. او گفته که در شبکه‌های اجتماعی پیام های تهدید به مرگ دریافت کرده است.",
+                "timestamp": 1526811348,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:persian/world-44188136",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "text": "مطابق قوانین عربستان، زنان در قیقومیت کامل مردان قرار دارند و برای سفر به خارج از کشور باید رضایت مردان خانواده را کسب کنند. این قانون برای زنانی که قصد تحصیل در خارج از این کشور را دارند، تصمیم به ازدواج دارند و یا حتی بعد از سپری کردن دوران حبس در زندان بناست آزاد شوند اجرا می‌شود و در همه این موارد مردان (همسر، پدر یا برادر) باید همراه زن یا تایید‌کننده وضعیت درخواستی باشند. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "رهف که حالا نام خانوادگی خود &quot;القنون&quot; را طرد کرده، خانواده خود را به آزار جسمی و روانی متهم کرده است. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "وی در هنگام ورود به کانادا به افسران پرونده پناهجویی خود گفته بود: &quot;در ابتدا، فقط برای آن که موهایم را کوتاه کرده بودم آنها من را ۶ ماه در خانه حبس کردند... جرا که در اسلام زنان حق ندارند مانند مردان لباس بپوشند&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;اما بیش از همه مادرم و برادرم با من بدرفتاری می‌کردند، کتکم می‌زدند و با خشونت با من رفتار می‌کردند.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "هنگامی که او در تایلند بود به بی‌بی‌سی گفته بود دیگر خود را یک مسلمان نمی‌داند؛ ادعایی که می‌تواند برایش در عربستان حکم ارتداد و مجازات اعدام به دنبال داشته باشد.&quot; ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "او دو هفته پیش در حالی که به همراه خانواده‌اش برای سفر به کویت از عربستان خارج شد، توانست با سوار شدن به هواپیمایی به مقصد تایلند فرار کند. مقصد نهایی او استرالیا بود چرا که توانسته بود ویزای ورود به این کشور را هم کسب کند اما آن طور که این دختر ۱۸ ساله می گوید یک دیپلمات عربستان وقتی که او از هواپیما پیاده شده بود پاسپورتش را ضبط کرده بود و این ترتیب او در بانکوک زمین‌گیر شده بود.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "پس از آن توییت‌های پشت هم او که همراه با درخواست کمک بود از اتاق هتلش در بانکوک منتشر شد و توجه جهان را به او جلب کرد.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "href": "https://twitter.com/Murphy_Jessica_/status/1085198447882362881",
+        "source": "twitter",
+        "type": "social_embed"
+      },
+      {
+        "text": "او در گفتگو با سی‌بی‌سی از ناامیدی در آن روزها سخن گفته و تاکید کرده که: &quot;داشتم خودم را آماده می‌کردم که آخرین یادداشت عمرم را هم بنویسم چرا که قصد داشتم به هر ترتیبی که شده اجازه ندهم آنها مرا بربایند و (به عربستان) بازگردانند.&quot; ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "توییت‌های رهف خیلی زود مورد توجه روزنامه‌نگاران و نهاد غیردولتی دیدبان حقوق‌بشر قرار گرفت و نهایتا دولت تایلند را وادار کرد که به سازمان ملل متحد اجازه دهد درخواست پناهندگی او را مورد بررسی قرار دهد. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "او پس از ورود به کانادا گفت که خود را &quot;خوش‌شانس&quot; می‌داند و بنا دارد مستقل زندگی کند، سفر کند و درباره زندگی، شغل و تحصیل و این که با چه کسی ازوداج کند خودش تصمیم بگیرد.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;تا پیش از این حق تصمیم گیری در هیچ کدام از این موارد را نداشتم اما از امروز دیگر چنین نیست.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "105188179",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/17BA4/production/_105188179_6431ec29-13c7-469c-aea2-10d0204fbf9d.jpg",
+        "path": "/cpsprodpb/17BA4/production/_105188179_6431ec29-13c7-469c-aea2-10d0204fbf9d.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "کریستینا فریلند، وزیرخارجه کانادا، شخصا در فرودگاه تورنتو از رهف استقبال کرد",
+        "caption": "کریستینا فریلند، وزیرخارجه کانادا، شخصا در فرودگاه تورنتو از رهف استقبال کرد",
+        "copyrightHolder": "Reuters",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "جاستین ترودو، نخست وزیر کانادا، روز جمعه گذشته رسما اعلام کرد کشورش آماده پذیرش رهف است و او تنها یک روز پس از آن وارد کانادا شد. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "روابط دیپلماتیک کانادا و عربستان در شش‌ماه گذشته بر سر مسایل حقوق‌بشری دچار تنش بی‌سابقه‌ای شده است. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "ماجرا از آنجا آغاز شد که وزیر خارجه کانادا، کریستیا فریلند (که بسیاری او را کاندید جانشینی جاستین ترودو می‌خوانند) خواستار آزادی چند فعال حقوق زنان که در عربستان زندانی بودند شد اما عربستان در واکنشی تند همه روابط تجاری خود را کانادا را به حالت تعلیق درآورد و حتی سفیر این کشور را از ریاض اخراج کرد. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      }
+    ]
+  },
+  "promo": {
+    "headlines": {
+      "shortHeadline": "دختر عربستانی پناهنده به کانادا: با زنان چون بردگان رفتار می‌شود",
+      "headline": "دختر عربستانی پناهنده به کانادا: با زنان چون بردگان رفتار می‌شود"
+    },
+    "locators": {
+      "assetUri": "/persian/world-46884718",
+      "cpsUrn": "urn:bbc:content:assetUri:persian/world-46884718",
+      "curie": "http://www.bbc.co.uk/asset/6f3de8d2-9435-0342-976a-50b97a3c6784"
+    },
+    "summary": "رهف محمد القنون، دختر ۱۸ ساله سعودی، که پس از فرار از این کشور ابتدا به تایلند رفت و سپس از کانادا درخواست پناهندگی کرد می‌گوید به خطر انداختن جانش برای فرار از عربستان \"ارزشش را داشته\" چرا که او حالا می‌تواند زندگی مستقل‌تری را تجربه کند.",
+    "timestamp": 1547578332721,
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "indexImage": {
+      "id": "105160641",
+      "subType": "index",
+      "href": "http://c.files.bbci.co.uk/390E/production/_105160641_mediaitem105160640.jpg",
+      "path": "/cpsprodpb/390E/production/_105160641_mediaitem105160640.jpg",
+      "height": 549,
+      "width": 976,
+      "altText": "Rahaf Mohammed Al-Qunun at Toronto airport, 12 January 2019",
+      "copyrightHolder": "AFP",
+      "type": "image"
+    },
+    "id": "urn:bbc:ares::asset:persian/world-46884718",
+    "type": "cps"
+  },
+  "relatedContent": {
+    "section": {
+      "subType": "index",
+      "name": "صفحه جهان",
+      "uri": "/persian/world",
+      "type": "simple"
+    },
+    "site": {
+      "subType": "site",
+      "name": "BBC Persian",
+      "uri": "/persian",
+      "type": "simple"
+    },
+    "groups": []
+  }
+}

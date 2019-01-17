@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "id": "urn:bbc:ares::asset:news/uk-england-suffolk-46881747",
+    "locators": {
+      "assetUri": "/news/uk-england-suffolk-46881747",
+      "cpsUrn": "urn:bbc:content:assetUri:news/uk-england-suffolk-46881747",
+      "curie": "http://www.bbc.co.uk/asset/03bb3c4b-a08f-b64d-abab-4b45b457d290"
+    },
+    "type": "STY",
+    "createdBy": "news",
+    "language": "en-gb",
+    "lastUpdated": 1547573059505,
+    "firstPublished": 1547573049,
+    "lastPublished": 1547573051,
+    "options": {
+      "isIgorSeoTagsEnabled": false,
+      "includeComments": false,
+      "allowRightHandSide": true,
+      "isFactCheck": false,
+      "allowDateStamp": true,
+      "suitableForSyndication": true,
+      "hasNewsTracker": false,
+      "allowRelatedStoriesBox": true,
+      "isKeyContent": false,
+      "allowHeadline": true,
+      "allowAdvertising": true,
+      "hasContentWarning": false,
+      "isBreakingNews": false,
+      "allowPrintingSharingLinks": true
+    },
+    "analyticsLabels": {
+      "counterName": "news.england.suffolk.story.46881747.page",
+      "cps_asset_id": "46881747",
+      "cps_asset_type": "sty"
+    },
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "tags": {},
+    "version": "v0.4.14",
+    "blockTypes": ["image", "paragraph"],
+    "includeComments": false
+  },
+  "content": {
+    "blocks": [
+      {
+        "id": "87918722",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/58FD/production/_87918722_kit-oliver-rosser.jpg",
+        "path": "/cpsprodpb/58FD/production/_87918722_kit-oliver-rosser.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "Kit Harington",
+        "caption": "Kit Harington found his new home thanks to advice from his musical friend",
+        "copyrightHolder": "Oliver Rosser",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Game of Thrones star Kit Harington has revealed he was helped to find his new home by his friend Ed Sheeran.",
+        "role": "introduction",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "The actor, who plays Jon Snow in the fantasy series, had searched &quot;all over&quot; before buying a house in Suffolk.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;It was Ed who said, 'Why don't you go and have a look in my county?' I did, so it's thanks to him I ended up there,&quot; said Harington.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "He said he was now &quot;in love&quot; with the East Anglian county and considered himself a &quot;Suffolk boy&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "94915338",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/14597/production/_94915338_pa-29321149.jpg",
+        "path": "/cpsprodpb/14597/production/_94915338_pa-29321149.jpg",
+        "height": 576,
+        "width": 1024,
+        "altText": "Ed Sheeran",
+        "caption": "Ed Sheeran grew up in Suffolk",
+        "copyrightHolder": "PA",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Singer-songwriter Sheeran grew up near Framlingham, which features in his hit Castle on the Hill.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "100911964",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/B73F/production/_100911964_snip4.jpg",
+        "path": "/cpsprodpb/B73F/production/_100911964_snip4.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "Framlingham Castle in Ed Sheeran's Castle on the Hill video",
+        "caption": "Framlingham Castle features in Ed Sheeran's Castle on the Hill video",
+        "copyrightHolder": "Asylum Records",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Harington, 32, said Suffolk was &quot;very special to me&quot; but confessed he and his wife Rosie Leslie, his co-star on Game of Thrones, had not ventured far from home.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Suffolk's association with Sheeran has brought benefits to the county, with Framlingham Castle <link><caption>reporting visitors numbers rising by 15% </caption><url href=\"https://www.bbc.co.uk/news/uk-england-suffolk-43797766\" platform=\"highweb\"/></link>in the year after it featured in the hit.",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "text": "Harington also appeared on the Zoe Ball Breakfast Show on BBC Radio 2 to discuss the final series of Game of Thrones.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "105195988",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/15B7F/production/_105195988_kitharingtonandzoeball-creditbbcandsarahjeynes.jpg",
+        "path": "/cpsprodpb/15B7F/production/_105195988_kitharingtonandzoeball-creditbbcandsarahjeynes.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "Zoe Ball and Kit Harington",
+        "caption": "Kit Harington appeared on the Zoe Ball Breakfast Show on Tuesday",
+        "copyrightHolder": "BBC/Sarah Jeynes",
+        "positionHint": "full-width",
+        "type": "image"
+      }
+    ]
+  },
+  "promo": {
+    "headlines": {
+      "shortHeadline": "Sheeran's help for Game of Thrones friend",
+      "headline": "Kit Harington: 'Ed Sheeran told me to live in Suffolk'"
+    },
+    "locators": {
+      "assetUri": "/news/uk-england-suffolk-46881747",
+      "cpsUrn": "urn:bbc:content:assetUri:news/uk-england-suffolk-46881747",
+      "curie": "http://www.bbc.co.uk/asset/03bb3c4b-a08f-b64d-abab-4b45b457d290"
+    },
+    "summary": "Kit Harington said he took advice from the singer on where he should settle.",
+    "timestamp": 1547573059505,
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "indexImage": {
+      "id": "87918722",
+      "subType": "index",
+      "href": "http://c.files.bbci.co.uk/58FD/production/_87918722_kit-oliver-rosser.jpg",
+      "path": "/cpsprodpb/58FD/production/_87918722_kit-oliver-rosser.jpg",
+      "height": 549,
+      "width": 976,
+      "altText": "Kit Harington",
+      "caption": "Kit Harington is returning to the stage for the first time in six years at London's Duke of York Theatre",
+      "copyrightHolder": "Oliver Rosser",
+      "type": "image"
+    },
+    "id": "urn:bbc:ares::asset:news/uk-england-suffolk-46881747",
+    "type": "cps"
+  },
+  "relatedContent": {
+    "section": {
+      "subType": "index",
+      "name": "Suffolk",
+      "uri": "/news/england/suffolk",
+      "type": "simple"
+    },
+    "site": {
+      "subType": "site",
+      "name": "BBC News",
+      "uri": "/news",
+      "type": "simple"
+    },
+    "groups": [
+      {
+        "type": "see-alsos",
+        "promos": [
+          {
+            "headlines": {
+              "shortHeadline": "Ed Sheeran in 'secret' Q&A with students",
+              "headline": "Ed Sheeran in 'secret' Q&A with Norwich students"
+            },
+            "locators": {
+              "assetUri": "/news/uk-england-norfolk-46468753",
+              "cpsUrn": "urn:bbc:content:assetUri:/news/uk-england-norfolk-46468753"
+            },
+            "summary": "The global superstar chatted to students about how they can make the most of their talent.",
+            "timestamp": 1544129532,
+            "cpsType": "STY",
+            "indexImage": {
+              "id": "94915338",
+              "subType": "index",
+              "href": "http://c.files.bbci.co.uk/14597/production/_94915338_pa-29321149.jpg",
+              "path": "/cpsprodpb/14597/production/_94915338_pa-29321149.jpg",
+              "height": 576,
+              "width": 1024,
+              "altText": "Ed Sheeran",
+              "caption": "Ed Sheeran was introduced as merely the \"secret speaker\", before walking out on stage to cheering and applause",
+              "copyrightHolder": "PA",
+              "type": "image"
+            },
+            "id": "urn:bbc:ares::asset:news/uk-england-norfolk-46468753",
+            "type": "cps"
+          },
+          {
+            "headlines": {
+              "shortHeadline": "Sheeran announces extra homecoming date",
+              "headline": "Ed Sheeran announces third date in Ipswich"
+            },
+            "locators": {
+              "assetUri": "/news/uk-england-suffolk-45664893",
+              "cpsUrn": "urn:bbc:content:assetUri:/news/uk-england-suffolk-45664893"
+            },
+            "summary": "The singer is to play gigs in his home county for the first time in five years.",
+            "timestamp": 1538046825,
+            "cpsType": "STY",
+            "indexImage": {
+              "id": "103598489",
+              "subType": "index",
+              "href": "http://c.files.bbci.co.uk/180B9/production/_103598489_edsheeran_pa.jpg",
+              "path": "/cpsprodpb/180B9/production/_103598489_edsheeran_pa.jpg",
+              "height": 549,
+              "width": 976,
+              "altText": "Ed Sheeran",
+              "caption": "Ed Sheeran will play in Suffolk for the first time in five years",
+              "copyrightHolder": "PA",
+              "type": "image"
+            },
+            "id": "urn:bbc:ares::asset:news/uk-england-suffolk-45664893",
+            "type": "cps"
+          }
+        ]
+      }
+    ]
+  }
+}

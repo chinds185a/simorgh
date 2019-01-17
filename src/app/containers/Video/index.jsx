@@ -6,22 +6,25 @@ import {
 } from '../../models/propTypes';
 import { filterForBlockType } from '../../helpers/blockHandlers';
 
-const VideoContainer = ({ blocks }) => {
-  const rawVideo = filterForBlockType(blocks, 'rawVideo');
+const VideoContainer = props => {
+  const rawVideo = filterForBlockType(props.blocks, 'rawVideo');
 
   if (!rawVideo) {
-    return null;
+    return <h3>NOT SUPPORTED: Video Here - {props.title}</h3>;
   }
 
   const { locator: videoLocator, duration, versionID, kind } = rawVideo.model;
 
-  const imageBlock = filterForBlockType(blocks, 'image');
+  const imageBlock = filterForBlockType(props.blocks, 'image');
 
   if (!imageBlock) {
     return null;
   }
 
-  const rawImage = filterForBlockType(imageBlock.model.blocks, 'rawImage');
+  const rawImage = filterForBlockType(
+    imageBlock.model.props.blocks,
+    'rawImage',
+  );
 
   if (!rawImage) {
     return null;

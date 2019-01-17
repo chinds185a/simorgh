@@ -1,30 +1,20 @@
 import React from 'react';
 import { string } from 'prop-types';
-import { Headline, SubHeading } from '@bbc/psammead-headings';
-import { extractText } from '../../helpers/blockHandlers';
+import { Headline } from '@bbc/psammead-headings';
 import { textDefaultPropTypes } from '../../models/propTypes';
 import { headlineModelPropTypes } from '../../models/propTypes/headline';
 
-const Headings = {
-  headline: Headline,
-  subheadline: SubHeading,
-};
-
-const HeadingsContainer = ({ blocks, type }) => {
-  const Heading = Headings[type];
-
-  const { text } = extractText(blocks);
-
+const HeadingsContainer = ({ text }) => {
   if (!text) {
     return null;
   }
 
-  return <Heading text={text}>{text}</Heading>;
+  return <Headline text={text}>{text}</Headline>;
 };
 
 HeadingsContainer.propTypes = {
   ...headlineModelPropTypes,
-  type: string.isRequired,
+  text: string.isRequired,
 };
 
 HeadingsContainer.defaultProps = textDefaultPropTypes;

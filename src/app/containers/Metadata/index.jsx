@@ -51,12 +51,12 @@ const MetadataContainer = ({ metadata, promo, service }) => {
               description={promo.summary}
               facebookAdmin={100004154058350}
               facebookAppID={1609039196070050}
-              lang={metadata.passport.language}
+              lang={metadata.language}
               locale={locale}
               metaTags={allTags(metadata.tags)}
               timeFirstPublished={timeFirstPublished}
               timeLastUpdated={timeLastUpdated}
-              title={promo.headlines.seoHeadline}
+              title={promo.headlines.headline}
               twitterCreator={twitterCreator}
               twitterSite={twitterSite}
               type={metadata.type}

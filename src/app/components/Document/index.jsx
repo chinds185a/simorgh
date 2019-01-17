@@ -8,6 +8,7 @@ import ResourceHints from './ResourceHints';
 
 /* eslint-disable react/prop-types */
 const Document = ({ assets, app, data, styleTags, helmet }) => {
+  console.log(`Helmet: ${helmet}`);
   const htmlAttrs = helmet.htmlAttributes.toComponent();
   const meta = helmet.meta.toComponent();
   const title = helmet.title.toComponent();
@@ -49,6 +50,11 @@ const Document = ({ assets, app, data, styleTags, helmet }) => {
         {data.isAmp && (
           <script key="amp" async src="https://cdn.ampproject.org/v0.js" />
         )}
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        />
       </head>
       <body>
         {/* eslint-disable react/no-danger */
