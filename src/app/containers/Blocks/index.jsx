@@ -14,7 +14,20 @@ const Blocks = ({ blocks, componentsToRender }) =>
 
     const { type: typeOfPreviousBlock } = blocks[index - 1] || {};
 
-    const Block = componentsToRender[type] || BlockString;
+    let Block = null;
+
+    switch (type) {
+      case 'crosshead':
+        Block = componentsToRender.Headings || BlockString;
+        break;
+      case 'media':
+        Block = componentsToRender.video || BlockString;
+        break;
+      default:
+        Block = componentsToRender[type] || BlockString;
+    }
+
+    console.log(`Blocks: ${Block}`);
 
     return (
       <Block

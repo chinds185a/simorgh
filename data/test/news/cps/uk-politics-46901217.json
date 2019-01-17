@@ -1,0 +1,938 @@
+{
+  "metadata": {
+    "id": "urn:bbc:ares::asset:news/uk-politics-46901217",
+    "locators": {
+      "assetUri": "/news/uk-politics-46901217",
+      "cpsUrn": "urn:bbc:content:assetUri:news/uk-politics-46901217",
+      "curie": "http://www.bbc.co.uk/asset/35a5d634-f1ae-be4d-b40d-835f4beb7f17"
+    },
+    "type": "STY",
+    "createdBy": "news",
+    "language": "en-gb",
+    "lastUpdated": 1547738474780,
+    "firstPublished": 1547701573,
+    "lastPublished": 1547738466,
+    "options": {
+      "isIgorSeoTagsEnabled": false,
+      "includeComments": true,
+      "allowRightHandSide": true,
+      "isFactCheck": false,
+      "allowDateStamp": true,
+      "suitableForSyndication": true,
+      "hasNewsTracker": false,
+      "allowRelatedStoriesBox": true,
+      "isKeyContent": false,
+      "allowHeadline": true,
+      "allowAdvertising": true,
+      "hasContentWarning": false,
+      "isBreakingNews": false,
+      "allowPrintingSharingLinks": true
+    },
+    "analyticsLabels": {
+      "counterName": "news.politics.story.46901217.page",
+      "cps_asset_id": "46901217",
+      "cps_asset_type": "sty"
+    },
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "tags": {
+      "about": [
+        {
+          "thingLabel": "Politics",
+          "thingUri": "http://www.bbc.co.uk/things/75612fa6-147c-4a43-97fa-fcf70d9cced3#id",
+          "thingId": "75612fa6-147c-4a43-97fa-fcf70d9cced3",
+          "thingType": ["Theme", "Thing"],
+          "thingSameAs": ["http://dbpedia.org/resource/Politics"]
+        },
+        {
+          "thingLabel": "Theresa May",
+          "thingUri": "http://www.bbc.co.uk/things/96e2c26f-e5ed-465b-bcc7-88811af261b9#id",
+          "thingId": "96e2c26f-e5ed-465b-bcc7-88811af261b9",
+          "thingType": ["Person", "Thing"],
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Theresa_May",
+            "http://rdf.freebase.com/ns/m.01zczs",
+            "http://www.wikidata.org/entity/Q264766"
+          ],
+          "topicName": "Theresa May",
+          "topicId": "c50znx8v4z7t",
+          "curationType": ["vivo-stream"]
+        },
+        {
+          "thingLabel": "Brexit",
+          "thingUri": "http://www.bbc.co.uk/things/f94293fd-ff83-400e-8bc0-89ec01930fce#id",
+          "thingId": "f94293fd-ff83-400e-8bc0-89ec01930fce",
+          "thingType": ["Event", "Thing"],
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Brexit",
+            "http://www.wikidata.org/entity/Q7888194"
+          ],
+          "topicName": "Brexit",
+          "topicId": "cwlw3xz0lvvt",
+          "curationType": ["vivo-stream"]
+        }
+      ],
+      "mentions": [
+        {
+          "thingLabel": "Jeremy Corbyn",
+          "thingUri": "http://www.bbc.co.uk/things/71e97cc0-8bec-416b-82f0-a6bbb85d7f1f#id",
+          "thingId": "71e97cc0-8bec-416b-82f0-a6bbb85d7f1f",
+          "thingType": ["Person", "Thing"],
+          "thingSameAs": [
+            "http://dbpedia.org/resource/Jeremy_Corbyn",
+            "http://rdf.freebase.com/ns/m.025m87",
+            "http://www.wikidata.org/entity/Q291169"
+          ],
+          "topicName": "Jeremy Corbyn",
+          "topicId": "cwlw3xz041gt",
+          "curationType": ["vivo-stream"]
+        }
+      ]
+    },
+    "version": "v0.4.14",
+    "blockTypes": [
+      "media",
+      "paragraph",
+      "list",
+      "crosshead",
+      "social_embed",
+      "image",
+      "include"
+    ],
+    "includeComments": true
+  },
+  "content": {
+    "blocks": [
+      {
+        "id": "p06y9g2t",
+        "subType": "clip",
+        "format": "video",
+        "title": "PM's Downing Street statement",
+        "synopses": {
+          "short": "Brexit: Theresa May gives Downing Street statement",
+          "long": "The prime minster has called on MPs to \"put self interest aside\" and \"work constructively together\" to find a way forward for Brexit.\n\nTheresa May said she had met with the Liberal Democrats, the SNP and Plaid Cymru, but was \"disappointed\" Labour leader Jeremy Corbyn had not chosen to take part in discussions.\n\nEarlier, the prime minister won a vote of no confidence by 325 to 306, as rebel Tory MPs and the DUP backed her to stay in No 10.\n\nBut just 24 hours before, both groups ensured her Brexit plan was voted down in Parliament by an historic margin.",
+          "medium": "Theresa May has called on MPs to \"work constructively together\" after winning a no confidence vote."
+        },
+        "imageUrl": "ichef.bbci.co.uk/images/ic/$recipe/p06y9j3z.jpg",
+        "embedding": true,
+        "warnings": {},
+        "advertising": true,
+        "caption": "Theresa May has called on MPs to \"work constructively together\" to find a way forward",
+        "versions": [
+          {
+            "versionId": "p06y9g2x",
+            "types": ["Original"],
+            "duration": 157,
+            "availableTerritories": {
+              "uk": true,
+              "nonUk": true
+            }
+          }
+        ],
+        "imageCopyright": "BBC",
+        "type": "media"
+      },
+      {
+        "text": "Party leaders and senior MPs have been meeting Theresa May to try to find a compromise on Brexit after her withdrawal deal was rejected by MPs.",
+        "role": "introduction",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "But Labour's Jeremy Corbyn called the talks a &quot;stunt&quot; and will not take part unless a &quot;no deal&quot; Brexit is ruled out.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Senior politicians on all sides have also been meeting with cabinet ministers to try to find a way forward.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "The PM will publish a new plan on Monday with a full debate and key vote scheduled for Tuesday, 29 January.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Speaking outside Downing Street after talks on Wednesday night with the Lib Dems, SNP and Plaid Cymru, Mrs May called on MPs to &quot;put self-interest aside&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;It will not be an easy task, but MPs know they have a duty to act in the national interest, reach a consensus and get this done,&quot; she said.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "<link><caption>Brexit Live: Rolling updates on developments</caption><url href=\"https://www.bbc.co.uk/news/live/46874049\" platform=\"highweb\"/></link>",
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-46318565</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "Brexit: A really simple guide",
+                  "headline": "Brexit: Your simple guide to the UK leaving the EU",
+                  "overtyped": "Brexit: A really simple guide"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-46318565"
+                },
+                "summary": "Feeling a little lost about what's going on with Brexit? Here's our basic guide.",
+                "timestamp": 1547672097,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Explainer",
+                    "categoryName": "Explainer"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-46318565",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-politics-46905661</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "Corbyn tells May: Rule out no-deal now",
+                  "headline": "Brexit: Rule out no-deal, Jeremy Corbyn tells Theresa May",
+                  "overtyped": "Corbyn tells May: Rule out no-deal now"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-politics-46905661"
+                },
+                "summary": "Labour's leader sets out conditions for Brexit talks with the prime minister and threatens more no-confidence votes.",
+                "timestamp": 1547736833,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-politics-46905661",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-politics-46899466</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "May's government survives no-confidence vote",
+                  "headline": "May's government survives no-confidence vote",
+                  "overtyped": "May's government survives no confidence vote"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-politics-46899466"
+                },
+                "summary": "The PM offers meetings on Brexit with rival party leaders after seeing off a bid to topple her government.",
+                "timestamp": 1547675813,
+                "passport": {
+                  "category": {
+                    "categoryId": "",
+                    "categoryName": ""
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-politics-46899466",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-politics-46897761</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "No-confidence motion: How did my MP vote?",
+                  "headline": "No-confidence motion: How did my MP vote?",
+                  "overtyped": "No confidence motion: How did my MP vote?"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-politics-46897761"
+                },
+                "summary": "Find out how your MP voted on Labour's vote of no confidence in the government.",
+                "timestamp": 1547668138,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Interactive",
+                    "categoryName": "Interactive"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-politics-46897761",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "text": "Who is the PM meeting?",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "The prime minister is holding meetings with various party leaders as well as Tory Brexiteers and the DUP - both of whom rejected her withdrawal deal earlier this week - on Thursday.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "BBC assistant political editor Norman Smith said that Environment Secretary Michael Gove, Cabinet Office Minister David Lidington and Brexit Secretary Steve Barclay are also holding talks with senior opposition politicians.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "So far, Mrs May has met with:",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "Ian Blackford, the SNP's Westminster leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Liz Saville Roberts, Plaid Cymru's Westminster leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Sir Vince Cable, Lib Dem leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Caroline Lucas, the Green Party's only MP",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Tory Brexiteer Nigel Evans",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Nigel Dodds, DUP Westminster leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Arlene Foster, DUP leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "text": "And ministers and senior Tories have been arriving at Downing Street to continue talks with parliamentarians and MPs from other parties, including:",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "Tory colleagues Owen Paterson, Iain Duncan Smith, David Davis, Mark Francois and Steve Baker",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Sir Graham Brady, chairman of the 1922 Committee of Tory backbenchers",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Cheryl Gillan, MP for Chesham and Amersham and a vice-chair of the 1922 Committee",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Hilary Benn, Labour MP and chairman of the Brexit select committee",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Adam Price, Plaid Cymru leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Yvette Cooper, Labour MP",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Nicky Morgan, Conservative MP",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Shailesh Vara, Conservative MP",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Tom Brake, Lib Dem MP and the party's Brexit spokesman",
+            "markupType": "plain_text",
+            "type": "listItem"
+          },
+          {
+            "text": "Jo Swinson, MP and deputy Lib Dem leader",
+            "markupType": "plain_text",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "href": "https://twitter.com/bbclaurak/status/1085849014401097730",
+        "source": "twitter",
+        "type": "social_embed"
+      },
+      {
+        "id": "97415642",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/604B/production/_97415642_007_in_numbers_624.png",
+        "path": "/cpsprodpb/604B/production/_97415642_007_in_numbers_624.png",
+        "height": 1,
+        "width": 624,
+        "altText": "Presentational white space",
+        "copyrightHolder": "BBC",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Corbyn's red line",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "In a speech in Hastings Mr Corbyn, the leader of the opposition, said he was &quot;quite happy&quot; to talk with Mrs May, but she had to rule out a no-deal Brexit.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "The Labour leader urged Mrs May to &quot;ditch the red lines&quot; and &quot;get serious about proposals for the future&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "He said: &quot;With no-deal on the table, the prime minister will enter into phony talks just to run down the clock and try to blackmail MPs to vote through her botched deal on a second attempt by threatening the country with the chaos that no-deal would bring.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "105219797",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/137AF/production/_105219797_1396e1f3-bcb1-4f49-a0cc-9c97c9c6ece7.jpg",
+        "path": "/cpsprodpb/137AF/production/_105219797_1396e1f3-bcb1-4f49-a0cc-9c97c9c6ece7.jpg",
+        "height": 549,
+        "width": 976,
+        "altText": "Jeremy Corbyn",
+        "copyrightHolder": "PA",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Mr Corbyn said the &quot;best outcome&quot; was to call a general election to &quot;break the deadlock&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "What do MPs say happened in their meetings?",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "The SNP's Westminster leader, Ian Blackford, said that the extension of Article 50 - the two year mechanism that means the UK leaves the EU on 29 March - the ruling out of a no-deal Brexit, and the option of a second EU referendum would have to form the basis of future discussions.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Party leader and Scotland's First Minister Nicola Sturgeon tweeted that the talks were just &quot;time wasting&quot; if the prime minister was not prepared to consider another referendum, rule out a no-deal Brexit or to extend Article 50.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Plaid Cymru's Westminster leader, Liz Saville Roberts, said they were &quot;committed to finding a real solution&quot; but &quot;that means taking a no deal Brexit off the table and a People's Vote on our European future&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Liberal Democrat leader Sir Vince Cable said he was encouraged by Mrs May's &quot;willingness to talk about these issues in detail&quot;. The preferred choice of the party is another referendum.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Following her meeting on Thursday, Green MP Caroline Lucas said the PM refused to rule out a no-deal Brexit.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "&quot;I repeatedly urged her again and again to take 'no deal' off the table because I think it completely skews the talks because you know that cliff edge is there,&quot; she said. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Mrs May was also resisting the option of extending Article 50, Ms Lucas said.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "DUP leader Arlene Foster said the prime minister was in &quot;listening mode&quot; and there was optimism that a Brexit deal could still be reached.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "She said she made a &quot;clear ask&quot; in relation to the Irish backstop, urging Mrs May to address it &quot;in a satisfactory way&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "<itemMeta>news/uk-northern-ireland-46903876</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "What does the DUP want from Brexit talks?",
+                  "headline": "Brexit talks: What does the DUP want?",
+                  "overtyped": "What does the DUP want from Brexit talks?"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-northern-ireland-46903876"
+                },
+                "summary": "Most things you need to know about the DUP and Brexit can be gauged from the party's name, says Jayne McCormack.",
+                "timestamp": 1547728423,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-northern-ireland-46903876",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-politics-46393399</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "Brexit: What could happen next?",
+                  "headline": "Brexit: What happens now?",
+                  "overtyped": "What happens next? "
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-politics-46393399"
+                },
+                "summary": "Theresa May has won a no confidence vote in her government. But with her Brexit plan defeated, what now?",
+                "timestamp": 1547666196,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Analysis",
+                    "categoryName": "Analysis"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-politics-46393399",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "text": "What is the view from the government?",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "When asked what the government was willing to compromise on, Conservative Party chairman Brandon Lewis refused to give specifics.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "He told BBC Radio 4's Today programme that Mrs May would not consider a customs union and that he did not believe a new referendum was &quot;the right way to go&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "103693518",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/13E83/production/_103693518_086b2036-0a30-4a6f-a4a0-94c46832b58f.jpg",
+        "path": "/cpsprodpb/13E83/production/_103693518_086b2036-0a30-4a6f-a4a0-94c46832b58f.jpg",
+        "height": 2,
+        "width": 640,
+        "altText": "Presentational grey line",
+        "copyrightHolder": "BBC",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "id": "104759123",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/7DC3/production/_104759123_laurakuenssberg-nc.png",
+        "path": "/cpsprodpb/7DC3/production/_104759123_laurakuenssberg-nc.png",
+        "height": 340,
+        "width": 1706,
+        "altText": "Analysis box by Laura Kuenssberg, political editor",
+        "copyrightHolder": "BBC",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "Meetings, on their own, are not a Plan B. Conversations, are not by themselves, compromises.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "To get any deal done where there are such clashing views all around, it requires give and take. It feels like a political lifetime since there has been a fundamental dispute in the cabinet, in the Tory party and across Parliament. Theresa May has stubbornly, although understandably, tried to plot a middle course.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "But that has failed so spectacularly at this stage. Ultimately she may well be left with the same dilemma of which way to tack.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "<link><caption>Read full article.</caption><url href=\"https://www.bbc.co.uk/news/uk-politics-46900738\" platform=\"highweb\"/></link>",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "id": "103693518",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/13E83/production/_103693518_086b2036-0a30-4a6f-a4a0-94c46832b58f.jpg",
+        "path": "/cpsprodpb/13E83/production/_103693518_086b2036-0a30-4a6f-a4a0-94c46832b58f.jpg",
+        "height": 2,
+        "width": 640,
+        "altText": "Presentational grey line",
+        "copyrightHolder": "BBC",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "What has the EU been saying?",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "EU's chief Brexit negotiator Michel Barnier has suggested that Brussels was ready to respond to any changes in Mrs May's &quot;red lines&quot;, saying: &quot;If they change, we'll change.&quot;",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "He said getting an agreement was &quot;in everybody's interest&quot; and that &quot;something has to change&quot; if it is to be secured.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "What happened in the vote of no confidence?",
+        "markupType": "plain_text",
+        "type": "crosshead"
+      },
+      {
+        "text": "The prime minister survived a vote of no confidence in her government by 325 to 306 votes - a margin of 19 - thanks to the backing of the 10 members of the DUP. Had they switched allegiance, the government would have lost by one vote.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "required": false,
+        "tile": "MP lookup",
+        "href": "/include/newsspec/21838-mp-vote-lookup/no-confidence-2/english/app?responsive=true&newsapps=true&app-image=https://c.files.bbci.co.uk/14909/production/_105133248_bercow_mp_vote_lookup_launcher_640-nc.png&app-clickable=true&amp-clickable=true&amp-image-height=360&amp-image-width=640&amp-image=https://c.files.bbci.co.uk/14909/production/_105133248_bercow_mp_vote_lookup_launcher_640-nc.png",
+        "platform": "highweb",
+        "type": "include"
+      },
+      {
+        "text": "<link><caption>Click here if you cannot see the look-up tool.</caption><url href=\"https://www.bbc.co.uk/news/uk-politics-46897761\" platform=\"highweb\"/></link> Data from Commons Votes Services. ",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "id": "105211326",
+        "subType": "body",
+        "href": "http://c.files.bbci.co.uk/F367/production/_105211326_no_confidence2-nc.png",
+        "path": "/cpsprodpb/F367/production/_105211326_no_confidence2-nc.png",
+        "height": 1250,
+        "width": 2666,
+        "altText": "Chart showing how MPs rejected the motion of no confidence",
+        "copyrightHolder": "BBC",
+        "positionHint": "full-width",
+        "type": "image"
+      },
+      {
+        "text": "This came after MPs voted against Mrs May's plans for Brexit on Tuesday night by a historic margin when it was rejected by 230 votes -  <link><caption>the largest defeat for a sitting government in history</caption><url href=\"https://www.bbc.co.uk/news/uk-politics-46885828\" platform=\"highweb\"/></link>.",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "id": "p06ybg1s",
+        "subType": "clip",
+        "format": "video",
+        "title": "Blair: Brexit extension 'inevitable'",
+        "synopses": {
+          "short": "The former prime minister says the date for leaving the EU has to be delayed",
+          "long": "Former Prime Minister Tony Blair has said extending the Brexit deadline is \"inevitable\".\n\nHe said: \"If I was the government now, I would already be having discussions with Europe about the terms of an extension\".\n\nThe UK is due to leave the European Union on 29 March 2019, in just 71 days.",
+          "medium": null
+        },
+        "imageUrl": "ichef.bbci.co.uk/images/ic/$recipe/p06ybhqc.jpg",
+        "embedding": true,
+        "warnings": {},
+        "advertising": true,
+        "caption": "The former prime minister tells Today leaving the EU has to be delayed",
+        "versions": [
+          {
+            "versionId": "p06ybg1x",
+            "types": ["Original"],
+            "duration": 38,
+            "availableTerritories": {
+              "uk": true,
+              "nonUk": true
+            }
+          }
+        ],
+        "imageCopyright": "BBC",
+        "type": "media"
+      },
+      {
+        "text": "Former prime minister Tony Blair told BBC Radio 4's Today that an extension to Article 50 was &quot;inevitable&quot; at this point and warned a no-deal Brexit would do &quot;profound damage&quot; to the UK's economy.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "There remains deep division among Mrs May's own MPs - including within her cabinet - about possible compromises, such as the option of staying in a customs union.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "id": "p06y8mml",
+        "subType": "clip",
+        "format": "video",
+        "title": "Corbyn: 'Remove prospect of castastrophe'",
+        "synopses": {
+          "short": "Jeremy Corbyn: 'Remove prospect of castastrophe of a no-deal Brexit'",
+          "long": "Theresa May has seen off a bid to remove her government with a no confidence motion. \n\nJeremy Corbyn tabled the motion on Tuesday after the rejection of the government's Brexit deal. \n\nHe has said that before further talks can go ahead, the government must remove the prospect of a no-deal Brexit from the table.\n\nLive updates here",
+          "medium": "The Labour leader reacts after the Prime Minister sees off a bid to remove her government from power."
+        },
+        "imageUrl": "ichef.bbci.co.uk/images/ic/$recipe/p06y8nsv.jpg",
+        "embedding": true,
+        "warnings": {},
+        "advertising": true,
+        "caption": "Jeremy Corbyn: \"The government must remove the prospect of the catastrophe of a no-deal Brexit\"",
+        "versions": [
+          {
+            "versionId": "p06y8mms",
+            "types": ["Original"],
+            "duration": 38,
+            "availableTerritories": {
+              "uk": true,
+              "nonUk": true
+            }
+          }
+        ],
+        "type": "media"
+      },
+      {
+        "text": "<link><caption>The Times newspaper</caption><url href=\"https://www.thetimes.co.uk/article/brexit-where-does-the-cabinet-stand-jcsrsrgsx\" platform=\"highweb\"/></link> claimed Leader of the House Andrea Leadsom and other cabinet Brexiteers want Mrs May to present MPs with a &quot;Plan B&quot; on Monday that would include a promise to impose a time-limit on the Northern Irish backstop - the fallback plan to avoid any return to physical border checks between the country and Ireland - and to negotiate a Canada-style free trade deal. ",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "numbered": false,
+        "items": [
+          {
+            "text": "<link><caption>Q&amp;A: The Northern Irish backstop</caption><url href=\"https://www.bbc.co.uk/news/uk-northern-ireland-politics-44615404\" platform=\"highweb\"/></link>",
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/business-45633592</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "What is a 'Canada-style' trade deal?",
+                  "headline": "What is a 'Canada-style' trade deal?",
+                  "overtyped": "What is a 'Canada-style' trade deal?"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/business-45633592"
+                },
+                "summary": "Could the Canada-EU trade deal be a model for the UK's relationship with the EU after Brexit?",
+                "timestamp": 1537893527,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Explainer",
+                    "categoryName": "Explainer"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/business-45633592",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/uk-politics-46480704</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "Alternative ways to break Brexit deadlock",
+                  "headline": "Alternative ways to break Brexit deadlock",
+                  "overtyped": "Alternative ways to break Brexit deadlock"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/uk-politics-46480704"
+                },
+                "summary": "Cancel Brexit, hand the decision to backbenchers or members of the public - or get the Queen involved?",
+                "timestamp": 1547720544,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/uk-politics-46480704",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          },
+          {
+            "text": "<itemMeta>news/business-46891186</itemMeta>",
+            "meta": [
+              {
+                "headlines": {
+                  "shortHeadline": "No-deal Brexit warning for UK drivers",
+                  "headline": "No-deal Brexit warning for UK drivers",
+                  "overtyped": "No-deal Brexit warning for UK drivers"
+                },
+                "locators": {
+                  "href": "http://www.bbc.co.uk/news/business-46891186"
+                },
+                "summary": "A no-deal Brexit would mean anyone planning to drive outside the UK would need an insurance Green Card.",
+                "timestamp": 1547714694,
+                "passport": {
+                  "category": {
+                    "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                    "categoryName": "News"
+                  }
+                },
+                "id": "urn:bbc:ares::asset:news/business-46891186",
+                "type": "cps"
+              }
+            ],
+            "markupType": "candy_xml",
+            "type": "listItem"
+          }
+        ],
+        "type": "list"
+      },
+      {
+        "text": "And the Telegraph reported <link><caption>it had seen a leaked transcript of a conference call</caption><url href=\"https://www.telegraph.co.uk/politics/2019/01/16/hammond-phone-call-full-transcript-conversation-11-business/\" platform=\"highweb\"/></link> in which Chancellor Philip Hammond told business leaders that a no-deal Brexit could be &quot;taken off the table&quot;.",
+        "markupType": "candy_xml",
+        "type": "paragraph"
+      },
+      {
+        "text": "Mrs May has insisted she will &quot;deliver on the verdict of the British people&quot; and that she is seeking the &quot;widest possible views across parliament&quot; on a Brexit deal.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "She said: &quot;I am disappointed that the leader of the Labour Party has not so far chosen to take part, but our door remains open.&quot; ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "Meanwhile, Mr Blackford has also written to Mr Corbyn, along with other opposition leaders, to urge him to back another referendum as Labour's official position. ",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      },
+      {
+        "text": "And, in a letter published in the Times newspaper, more than 170 leading business figures called for Theresa May and Jeremy Corbyn to back another referendum on withdrawal from the European Union &quot;to stop us crashing out of the EU with no deal at all&quot;.",
+        "markupType": "plain_text",
+        "type": "paragraph"
+      }
+    ]
+  },
+  "promo": {
+    "headlines": {
+      "shortHeadline": "May meets party leaders over Brexit deadlock",
+      "headline": "Brexit: Theresa May meets party leaders to try to break deadlock"
+    },
+    "locators": {
+      "assetUri": "/news/uk-politics-46901217",
+      "cpsUrn": "urn:bbc:content:assetUri:news/uk-politics-46901217",
+      "curie": "http://www.bbc.co.uk/asset/35a5d634-f1ae-be4d-b40d-835f4beb7f17"
+    },
+    "summary": "But Jeremy Corbyn calls the talks a \"stunt\" - as 29 January is pencilled in for a vote on any revised plan.",
+    "timestamp": 1547738474780,
+    "passport": {
+      "category": {
+        "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+        "categoryName": "News"
+      }
+    },
+    "indexImage": {
+      "id": "105223878",
+      "subType": "index",
+      "href": "http://c.files.bbci.co.uk/15718/production/_105223878_theresamay_reuters.jpg",
+      "path": "/cpsprodpb/15718/production/_105223878_theresamay_reuters.jpg",
+      "height": 549,
+      "width": 976,
+      "altText": "Theresa May",
+      "copyrightHolder": "Reuters",
+      "type": "image"
+    },
+    "id": "urn:bbc:ares::asset:news/uk-politics-46901217",
+    "type": "cps"
+  },
+  "relatedContent": {
+    "section": {
+      "subType": "index",
+      "name": "UK Politics",
+      "uri": "/news/politics",
+      "type": "simple"
+    },
+    "site": {
+      "subType": "site",
+      "name": "BBC News",
+      "uri": "/news",
+      "type": "simple"
+    },
+    "groups": []
+  }
+}

@@ -8,6 +8,7 @@ import FooterContainer from '../Footer';
 import Headings from '../Headings';
 import image from '../Image';
 import paragraph from '../Paragraph';
+import video from '../Video';
 import Blocks from '../Blocks';
 import articlePropTypes from '../../models/propTypes/article';
 import { ServiceContextProvider } from '../../contexts/ServiceContext';
@@ -34,16 +35,12 @@ const GridItemConstrained = styled.div`
 const componentsToRenderMain = {
   image,
   paragraph,
+  video,
+  Headings,
 };
 
 const splitBlocksByHeadline = content => {
-  // const headlineIndexPlusOne =
-  //   blocks.findIndex(({ type }) => type === 'headline') + 1;
-
-  // const headlineBlocks = blocks.slice(0, headlineIndexPlusOne);
-  // const mainBlocks = blocks.slice(headlineIndexPlusOne, blocks.length);
   const mainBlocks = content.blocks;
-  // console.log(`Content: ${JSON.stringify(mainBlocks)}`);
 
   return { mainBlocks };
 };
@@ -58,7 +55,7 @@ const CPSArticleContainer = ({ loading, error, data }) => {
     const { isAmp, data: articleData, service } = data;
     const { content, metadata, promo } = articleData;
 
-    const { headlineBlocks, mainBlocks } = splitBlocksByHeadline(content);
+    const { mainBlocks } = splitBlocksByHeadline(content);
 
     /*
      * headlineBlocks length check is temporary
