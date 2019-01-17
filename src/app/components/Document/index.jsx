@@ -50,6 +50,11 @@ const Document = ({ assets, app, data, styleTags, helmet }) => {
         {data.isAmp && (
           <script key="amp" async src="https://cdn.ampproject.org/v0.js" />
         )}
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        />
       </head>
       <body>
         {/* eslint-disable react/no-danger */

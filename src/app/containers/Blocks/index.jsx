@@ -23,11 +23,12 @@ const Blocks = ({ blocks, componentsToRender }) =>
       case 'media':
         Block = componentsToRender.video || BlockString;
         break;
+      case 'social_embed':
+        Block = componentsToRender.socialEmbed || BlockString;
+        break;
       default:
         Block = componentsToRender[type] || BlockString;
     }
-
-    console.log(`Blocks: ${Block}`);
 
     return (
       <Block

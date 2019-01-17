@@ -9,6 +9,7 @@ import Headings from '../Headings';
 import image from '../Image';
 import paragraph from '../Paragraph';
 import video from '../Video';
+import socialEmbed from '../SocialEmbed';
 import Blocks from '../Blocks';
 import articlePropTypes from '../../models/propTypes/article';
 import { ServiceContextProvider } from '../../contexts/ServiceContext';
@@ -37,6 +38,7 @@ const componentsToRenderMain = {
   paragraph,
   video,
   Headings,
+  socialEmbed,
 };
 
 const splitBlocksByHeadline = content => {
