@@ -1,18 +1,21 @@
 import { matchRoutes } from 'react-router-config';
+import { resolve } from 'navi';
 
-const getRouteProps = (routes, url) => {
-  const matchedRoutes = matchRoutes(routes, url);
+const getRouteProps = async (routes, url) => {
+  const matchedRoutes = await resolve({ routes, url });
 
-  if (matchedRoutes.length <= 0) {
-    throw new Error(`No route was found for ${url}.`);
-  }
+  console.log(await matchRoutes);
 
-  const { route, match } = matchedRoutes[0];
-  const { amp, id, service } = match.params;
+  // if (matchedRoutes.length <= 0) {
+  //   throw new Error(`No route was found for ${url}.`);
+  // }
 
-  const isAmp = amp ? true : false; // eslint-disable-line no-unneeded-ternary
+  // const { route, match } = matchedRoutes[0];
+  // const { amp, id, service } = match.params;
 
-  return { isAmp, service, id, route, match };
+  // const isAmp = amp ? true : false; // eslint-disable-line no-unneeded-ternary
+
+  // return { isAmp, service, id, route, match };
 };
 
 export default getRouteProps;

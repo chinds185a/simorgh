@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-navi';
 import pathToRegexp from 'path-to-regexp';
 import InlineLink from '@bbc/psammead-inline-link';
 import pathOr from 'ramda/src/pathOr';
@@ -26,7 +26,7 @@ const InlineLinkContainer = ({ locator, isExternal, blocks }) => {
     // the path is the first item in the array
     const path = result[0];
     return (
-      <InternalInlineLink to={path}>
+      <InternalInlineLink href={path}>
         <Blocks blocks={blocks} componentsToRender={componentsToRender} />
       </InternalInlineLink>
     );

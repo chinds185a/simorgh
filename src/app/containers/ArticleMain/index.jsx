@@ -19,7 +19,6 @@ const componentsToRender = {
   image,
   timestamp,
 };
-
 const ArticleMain = ({ articleData }) => {
   const { content, metadata, promo } = articleData;
   const { blocks } = content.model;
