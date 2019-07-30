@@ -8,6 +8,7 @@ import Blocks from '../Blocks';
 import timestamp from '../ArticleTimestamp';
 import { GhostGrid } from '../../lib/styledGrid';
 import ATIAnalytics from '../ATIAnalytics';
+import ChartbeatAnalytics from '../ChartbeatAnalytics';
 import mediaPlayer from '../MediaPlayer';
 
 const componentsToRender = {
@@ -19,7 +20,6 @@ const componentsToRender = {
   image,
   timestamp,
 };
-
 const ArticleMain = ({ articleData }) => {
   const { content, metadata, promo } = articleData;
   const { blocks } = content.model;
@@ -27,6 +27,7 @@ const ArticleMain = ({ articleData }) => {
   return (
     <Fragment>
       <ATIAnalytics data={articleData} />
+      <ChartbeatAnalytics />
       <MetadataContainer metadata={metadata} promo={promo} />
       <main role="main">
         <GhostGrid>

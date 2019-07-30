@@ -4,22 +4,22 @@
  * https://github.com/jtart/react-universal-app
  */
 import React from 'react';
-import { StaticRouter, BrowserRouter } from 'react-router-dom';
-import App from './App';
+import { NaviProvider, View } from 'react-navi';
+import compose from 'ramda/src/compose';
+import withContexts from '../PageHandlers/withContexts';
+import withPageWrapper from '../PageHandlers/withPageWrapper';
 
-export const ClientApp = props => (
-  <BrowserRouter {...props}>
-    <App initialData={props.data} routes={props.routes} dials={props.data.dials} />
-  </BrowserRouter>
-);
+const App = ({ navigation }) => {
+  return (
+    <NaviProvider navigation={navigation}>
+      <View />
+    </NaviProvider>
+  );
+};
 
-export const ServerApp = props => (
-  <StaticRouter {...props}>
-    <App
-      initialData={props.data}
-      routes={props.routes}
-      bbcOrigin={props.bbcOrigin}
-      dials={props.data.dials}
-    />
-  </StaticRouter>
-);
+const EnhancedApp = compose(
+  withContexts,
+  withPageWrapper,
+)(App);
+
+export default EnhancedApp;

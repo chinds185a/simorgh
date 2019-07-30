@@ -11,7 +11,7 @@ const preprocessorRules = [
   applySquashTopstories,
 ];
 
-const getFrontpageInitialData = async ({ service }) => {
+const getFrontpageInitialData = async service => {
   const baseUrl = onClient()
     ? getBaseUrl(window.location.origin)
     : process.env.SIMORGH_BASE_URL;

@@ -16,12 +16,15 @@ import {
   frontpageManifestRegexPath,
   frontpageSwRegexPath,
   mediaRadioAndTvRegexPathsArray,
+  mediaDataRegexPath,
 } from '../app/routes/regex';
 import nodeLogger from '../app/lib/logger.node';
 import renderDocument from './Document';
 import getRouteProps from '../app/routes/getInitialData/utils/getRouteProps';
 import getDials from './getDials';
 import logResponseTime from './utilities/logResponseTime';
+import { resolve } from 'navi';
+import { createMemoryNavigation } from 'navi';
 
 const morgan = require('morgan');
 
@@ -115,6 +118,19 @@ if (process.env.APP_ENV === 'local') {
 
       sendDataFile(res, dataFilePath, next);
     })
+    .get(mediaDataRegexPath, async ({ params }, res, next) => {
+      const { service, serviceId, mediaId } = params;
+
+      const dataFilePath = path.join(
+        process.cwd(),
+        'data',
+        service,
+        serviceId,
+        mediaId,
+      );
+
+      sendDataFile(res, `${dataFilePath}.json`, next);
+    })
     .get('/ckns_policy/*', (req, res) => {
       // Route to allow the cookie banner to make the cookie oven request
       // without throwing an error due to not being on a bbc domain.
@@ -151,36 +167,51 @@ server
   )
   .get(
     [articleRegexPath, frontpageRegexPath, ...mediaRadioAndTvRegexPathsArray],
-    async ({ url, headers }, res) => {
+    async (req, res) => {
       try {
-        const { service, isAmp, route, match } = getRouteProps(routes, url);
-        const data = await route.getInitialData(match.params);
-        const { status } = data;
-        const bbcOrigin = headers['bbc-origin'];
-
+        const bbcOrigin = req.headers['bbc-origin'];
         let dials = {};
         try {
           dials = await getDials();
         } catch ({ message }) {
           logger.error(`Error fetching Cosmos dials: ${message}`);
         }
-        // Preserve initial dial state in window so it is available during hydration
-        data.dials = dials;
+        // // Preserve initial dial state in window so it is available during hydration
+        // data.dials = dials;
 
-        res.status(status).send(
+        const navigation = createMemoryNavigation({
+          url: req.url,
+          routes,
+        });
+
+        let {
+          lastChunk: { request, url },
+        } = await navigation.getRoute();
+        const { service, isAmp = false } = request.context;
+        const { pathname } = url;
+
+        // Wait for Navi to get the page's data and route, so that everything can
+        // be synchronously rendered with `renderToString`.
+        // This can be removed when Reacts Suspence works with SSR
+        let route = await navigation.getRoute();
+
+        res.status(route.status).send(
           await renderDocument({
             bbcOrigin,
-            data,
             isAmp,
+            dials,
             routes,
             service,
-            url,
+            url: pathname,
+            navigation,
           }),
         );
-      } catch ({ message, status }) {
+        // res.send(props.data);
+      } catch (error) {
+        console.log(error);
         // Return an internal server error for any uncaught errors
-        logger.error(`status: ${status || 500} - ${message}`);
-        res.status(500).send(message);
+        logger.error(`status: ${error.status || 500} - ${error.message}`);
+        res.status(500).send(error.message);
       }
     },
   );

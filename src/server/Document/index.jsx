@@ -2,7 +2,7 @@ import React from 'react';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { ServerApp } from '../../app/containers/App';
+import App from '../../app/containers/App';
 
 import { getStyleTag } from '../styles';
 import { getAssetsArray, getAssetOrigins } from '../assets';
@@ -10,24 +10,25 @@ import DocumentComponent from './component';
 
 const renderDocument = async ({
   bbcOrigin,
-  data,
   isAmp,
+  dials,
   routes,
   service,
   url,
+  navigation,
 }) => {
   const sheet = new ServerStyleSheet();
 
   const app = renderToString(
     sheet.collectStyles(
-      <ServerApp
+      <App
         location={url}
         routes={routes}
-        data={data}
         bbcOrigin={bbcOrigin}
         context={{}}
         service={service}
         isAmp={isAmp}
+        navigation={navigation}
       />,
     ),
   );
@@ -40,12 +41,12 @@ const renderDocument = async ({
       assets={assets}
       assetOrigins={assetOrigins}
       app={app}
-      data={data}
       styleTags={getStyleTag(sheet, isAmp)}
       helmet={headHelmet}
       service={service}
       isAmp={isAmp}
-      dials={data.dials}
+      dials={dials}
+      navigation={navigation}
     />,
   );
 
