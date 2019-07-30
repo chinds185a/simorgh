@@ -155,20 +155,7 @@ server
     [articleRegexPath, frontpageRegexPath, ...mediaRadioAndTvRegexPathsArray],
     async (req, res) => {
       try {
-        // const {
-        //   status,
-        //   lastChunk: { request },
-        // } = await resolve({ routes, url });
-        // const {
-        //   params: { service },
-        //   context: {
-        //     view: { props },
-        //   },
-        // } = request;
-
         const bbcOrigin = req.headers['bbc-origin'];
-        console.log(bbcOrigin);
-
         let dials = {};
         try {
           dials = await getDials();
@@ -186,7 +173,7 @@ server
         let {
           lastChunk: { request, url },
         } = await navigation.getRoute();
-        const { service, id, pageType, isAmp = false } = request.context;
+        const { service, isAmp = false } = request.context;
         const { pathname } = url;
 
         // Wait for Navi to get the page's data and route, so that everything can
@@ -196,7 +183,7 @@ server
 
         res.status(route.status).send(
           await renderDocument({
-            bbcOrigin: 'https://www.bbc.com',
+            bbcOrigin,
             isAmp,
             dials,
             routes,

@@ -1,6 +1,6 @@
 import React from 'react';
-import Article from '../containers/Article';
-import FrontPage from '../containers/FrontPage';
+import ArticleMain from '../containers/ArticleMain';
+import FrontPageMain from '../containers/FrontPageMain';
 import MediaPage from '../containers/MediaPage';
 import getArticleInitialData from './getInitialData/article';
 import getFrontpageInitialData from './getInitialData/frontpage';
@@ -17,7 +17,7 @@ const routes = mount({
     const { service, id, isAmp = false } = req.params;
     const data = await getArticleInitialData(service, id);
     return {
-      view: <Article data={data} />,
+      view: <ArticleMain articleData={data.pageData} />,
       service,
       id,
       isAmp,
@@ -28,8 +28,9 @@ const routes = mount({
   '/:service': route(async req => {
     const { service, isAmp = false } = req.params;
     const data = await getFrontpageInitialData(service);
+    console.log(data.pageData);
     return {
-      view: <FrontPage data={data} />,
+      view: <FrontPageMain frontPageData={data.pageData} />,
       service,
       isAmp,
       pageType: 'frontPage',
