@@ -162,7 +162,7 @@ server
         } catch ({ message }) {
           logger.error(`Error fetching Cosmos dials: ${message}`);
         }
-        // // Preserve initial dial state in window so it is available during hydration
+        // Preserve initial dial state in window so it is available during hydration
         // data.dials = dials;
 
         const navigation = createMemoryNavigation({
@@ -170,9 +170,11 @@ server
           routes,
         });
 
+        // fetching route props from the currently matched route so these can be passed to the app
         let {
           lastChunk: { request, url },
         } = await navigation.getRoute();
+
         const { service, isAmp = false } = request.context;
         const { pathname } = url;
 
@@ -192,9 +194,7 @@ server
             navigation,
           }),
         );
-        // res.send(props.data);
       } catch (error) {
-        console.log(error);
         // Return an internal server error for any uncaught errors
         logger.error(`status: ${error.status || 500} - ${error.message}`);
         res.status(500).send(error.message);

@@ -10,11 +10,11 @@ import {
   frontpageRegexPath,
   mediaRadioAndTvRegexPathsArray,
 } from './regex';
-import { mount, route } from 'navi';
+import { mount, route, map } from 'navi';
 
-const routes = mount({
-  '/:service/articles/:id': route(async req => {
-    const { service, id, isAmp = false } = req.params;
+const articleMatcher = map(({ params }) =>
+  route(async req => {
+    const { service, id, isAmp = false } = params;
     const data = await getArticleInitialData(service, id);
     return {
       view: <ArticleMain articleData={data.pageData} />,
@@ -24,9 +24,11 @@ const routes = mount({
       pageType: 'article',
     };
   }),
+);
 
-  '/:service': route(async req => {
-    const { service, isAmp = false } = req.params;
+const frontPageMatcher = map(({ params }) =>
+  route(async req => {
+    const { service, isAmp = false } = params;
     const data = await getFrontpageInitialData(service);
     console.log(data.pageData);
     return {
@@ -36,6 +38,11 @@ const routes = mount({
       pageType: 'frontPage',
     };
   }),
+);
+
+const routes = mount({
+  '/:service/articles/:id': articleMatcher,
+  '/:service': frontPageMatcher,
 });
 
 // const routes = [
