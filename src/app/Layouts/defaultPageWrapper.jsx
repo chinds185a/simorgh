@@ -6,16 +6,18 @@ import ManifestContainer from '../containers/Manifest';
 import ServiceWorkerContainer from '../containers/ServiceWorker';
 import GlobalStyle from '../lib/globalStyles';
 
-const PageWrapper = ({ children }) => (
-  <Fragment>
-    <GlobalStyle />
-    <ServiceWorkerContainer />
-    <ManifestContainer />
-    <HeaderContainer />
-    {children}
-    <FooterContainer />
-  </Fragment>
-);
+const PageWrapper = ({ children }) => {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <ServiceWorkerContainer />
+      <ManifestContainer />
+      <HeaderContainer />
+      {children}
+      <FooterContainer />
+    </Fragment>
+  );
+};
 
 PageWrapper.propTypes = {
   children: node.isRequired,

@@ -10,6 +10,7 @@ import MetadataContainer from '../Metadata';
 import ATIAnalytics from '../ATIAnalytics';
 
 const FrontPageMain = ({ frontPageData }) => {
+  console.log(frontPageData);
   const { product, serviceLocalizedName, translations } = useContext(
     ServiceContext,
   );

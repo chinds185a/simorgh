@@ -10,6 +10,8 @@ import { GhostGrid } from '../../lib/styledGrid';
 import ATIAnalytics from '../ATIAnalytics';
 import mediaPlayer from '../MediaPlayer';
 
+import { Link } from 'react-navi';
+
 const componentsToRender = {
   headline: headings,
   subheadline: headings,
@@ -19,7 +21,6 @@ const componentsToRender = {
   image,
   timestamp,
 };
-
 const ArticleMain = ({ articleData }) => {
   const { content, metadata, promo } = articleData;
   const { blocks } = content.model;
@@ -29,6 +30,7 @@ const ArticleMain = ({ articleData }) => {
       <ATIAnalytics data={articleData} />
       <MetadataContainer metadata={metadata} promo={promo} />
       <main role="main">
+        <Link href="/persian/articles/c4vlle3q337o">test article</Link>
         <GhostGrid>
           <Blocks blocks={blocks} componentsToRender={componentsToRender} />
         </GhostGrid>

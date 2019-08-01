@@ -22,6 +22,8 @@ import renderDocument from './Document';
 import getRouteProps from '../app/routes/getInitialData/utils/getRouteProps';
 import getDials from './getDials';
 import logResponseTime from './utilities/logResponseTime';
+import { resolve } from 'navi';
+import { createMemoryNavigation } from 'navi';
 
 const morgan = require('morgan');
 
@@ -151,13 +153,9 @@ server
   )
   .get(
     [articleRegexPath, frontpageRegexPath, ...mediaRadioAndTvRegexPathsArray],
-    async ({ url, headers }, res) => {
+    async (req, res) => {
       try {
-        const { service, isAmp, route, match } = getRouteProps(routes, url);
-        const data = await route.getInitialData(match.params);
-        const { status } = data;
-        const bbcOrigin = headers['bbc-origin'];
-
+        const bbcOrigin = req.headers['bbc-origin'];
         let dials = {};
         try {
           dials = await getDials();
@@ -165,22 +163,41 @@ server
           logger.error(`Error fetching Cosmos dials: ${message}`);
         }
         // Preserve initial dial state in window so it is available during hydration
-        data.dials = dials;
+        // data.dials = dials;
 
-        res.status(status).send(
+        const navigation = createMemoryNavigation({
+          url: req.url,
+          routes,
+        });
+
+        // fetching route props from the currently matched route so these can be passed to the app
+        let {
+          lastChunk: { request, url },
+        } = await navigation.getRoute();
+
+        const { service, isAmp = false } = request.context;
+        const { pathname } = url;
+
+        // Wait for Navi to get the page's data and route, so that everything can
+        // be synchronously rendered with `renderToString`.
+        // This can be removed when Reacts Suspence works with SSR
+        let route = await navigation.getRoute();
+
+        res.status(route.status).send(
           await renderDocument({
             bbcOrigin,
-            data,
             isAmp,
+            dials,
             routes,
             service,
-            url,
+            url: pathname,
+            navigation,
           }),
         );
-      } catch ({ message, status }) {
+      } catch (error) {
         // Return an internal server error for any uncaught errors
-        logger.error(`status: ${status || 500} - ${message}`);
-        res.status(500).send(message);
+        logger.error(`status: ${error.status || 500} - ${error.message}`);
+        res.status(500).send(error.message);
       }
     },
   );
